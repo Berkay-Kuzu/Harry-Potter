@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Harry_Potter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="platform" translatesAutoresizingMaskIntoConstraints="NO" id="fez-4M-B2e">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tll-Bt-HWC">
+                                <rect key="frame" x="16" y="785" width="358" height="2.6666666666666288"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="progressTintColor" systemColor="systemYellowColor"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="16I-JX-Qg6" userLabel="Question Label">
+                                <rect key="frame" x="11" y="114" width="363" height="430"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-qe-XI0" userLabel="Score Label">
+                                <rect key="frame" x="25" y="47" width="139" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="TkZ-9N-JUD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newQuestionFrame-removebg" translatesAutoresizingMaskIntoConstraints="NO" id="utB-bQ-KnV">
+                                <rect key="frame" x="0.0" y="114" width="390" height="430"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHi-ti-1Jo" userLabel="True">
+                                <rect key="frame" x="16" y="610" width="358" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="Hti-Gc-tIw"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="True" backgroundImage="HarryPotterButtonFrame-removebg">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="True"/>
+                                    </attributedString>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HXi-Vt-sKL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-t4-Njh" userLabel="False">
+                                <rect key="frame" x="16" y="683" width="358" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="u30-GM-TLQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="False" backgroundImage="HarryPotterButtonFrame-removebg">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKc-aj-cd7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="utB-bQ-KnV" firstAttribute="top" secondItem="16I-JX-Qg6" secondAttribute="top" id="8b7-Vf-5sS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uuz-qe-XI0" secondAttribute="trailing" constant="226" id="9TK-VT-gdD"/>
+                            <constraint firstItem="16I-JX-Qg6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BrD-cu-avK"/>
+                            <constraint firstItem="utB-bQ-KnV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Iek-a5-R1u"/>
+                            <constraint firstItem="WHi-ti-1Jo" firstAttribute="trailing" secondItem="WXN-t4-Njh" secondAttribute="trailing" id="JJb-rb-ZHd"/>
+                            <constraint firstItem="WXN-t4-Njh" firstAttribute="trailing" secondItem="tll-Bt-HWC" secondAttribute="trailing" id="Jhv-m9-4ct"/>
+                            <constraint firstItem="utB-bQ-KnV" firstAttribute="centerX" secondItem="WHi-ti-1Jo" secondAttribute="centerX" id="Lvw-WR-1CY"/>
+                            <constraint firstItem="16I-JX-Qg6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="NEv-ug-S2U"/>
+                            <constraint firstItem="WHi-ti-1Jo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Qx7-W7-czT"/>
+                            <constraint firstItem="fez-4M-B2e" firstAttribute="trailing" secondItem="utB-bQ-KnV" secondAttribute="trailing" id="Sbq-Qf-718"/>
+                            <constraint firstItem="utB-bQ-KnV" firstAttribute="bottom" secondItem="16I-JX-Qg6" secondAttribute="bottom" id="YpA-G8-yKL"/>
+                            <constraint firstItem="fez-4M-B2e" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aa7-4T-bcT"/>
+                            <constraint firstItem="WXN-t4-Njh" firstAttribute="top" secondItem="WHi-ti-1Jo" secondAttribute="bottom" constant="26" id="bxG-fz-6EW"/>
+                            <constraint firstItem="WHi-ti-1Jo" firstAttribute="leading" secondItem="WXN-t4-Njh" secondAttribute="leading" id="d06-lA-dWv"/>
+                            <constraint firstItem="WXN-t4-Njh" firstAttribute="leading" secondItem="tll-Bt-HWC" secondAttribute="leading" id="fvO-Le-fAZ"/>
+                            <constraint firstItem="Uuz-qe-XI0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="hie-gR-cIK"/>
+                            <constraint firstItem="16I-JX-Qg6" firstAttribute="trailing" secondItem="WHi-ti-1Jo" secondAttribute="trailing" id="oBl-ic-Mli"/>
+                            <constraint firstItem="tll-Bt-HWC" firstAttribute="top" secondItem="WXN-t4-Njh" secondAttribute="bottom" constant="53" id="oJo-Xa-3Ps"/>
+                            <constraint firstItem="utB-bQ-KnV" firstAttribute="top" secondItem="Uuz-qe-XI0" secondAttribute="bottom" constant="13" id="oqU-7B-L6G"/>
+                            <constraint firstItem="fez-4M-B2e" firstAttribute="leading" secondItem="utB-bQ-KnV" secondAttribute="leading" id="p1X-6h-TvP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tll-Bt-HWC" secondAttribute="bottom" constant="23.333333333333371" id="p5v-9X-4MY"/>
+                            <constraint firstItem="fez-4M-B2e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-47" id="xLO-4r-FmF"/>
+                            <constraint firstItem="Uuz-qe-XI0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ySA-ld-evP"/>
+                            <constraint firstItem="WHi-ti-1Jo" firstAttribute="top" secondItem="16I-JX-Qg6" secondAttribute="bottom" constant="66" id="z7X-1s-btT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="falseButton" destination="WXN-t4-Njh" id="LNR-GH-5B6"/>
+                        <outlet property="progressBar" destination="tll-Bt-HWC" id="Dq3-C5-dfM"/>
+                        <outlet property="questionLabel" destination="16I-JX-Qg6" id="ut3-qI-HV6"/>
+                        <outlet property="scoreLabel" destination="Uuz-qe-XI0" id="9Lf-E3-bKl"/>
+                        <outlet property="trueButton" destination="WHi-ti-1Jo" id="BvJ-fw-GlE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.92307692307692" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HarryPotterButtonFrame-removebg" width="318" height="74"/>
+        <image name="newQuestionFrame-removebg" width="365" height="265"/>
+        <image name="platform" width="3744" height="5616"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
